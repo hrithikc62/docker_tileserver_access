@@ -1,30 +1,30 @@
-Qt TileServer Controller
+# Qt TileServer Controller
 
-This is a simple Qt application that allows you to start and stop a TileServer running inside Docker using UI buttons.
+    This is a simple Qt application that allows you to start and stop a TileServer running inside Docker using UI buttons.
 
-Features
+# Features
 
-Start TileServer using Docker
+1.Start TileServer using Docker
 
-Stop TileServer using Docker
+2.Stop TileServer using Docker
 
-Simple Qt GUI (Start / Stop buttons)
+3.Simple Qt GUI (Start / Stop buttons)
 
-Displays logs or status messages
+4.Displays logs or status messages
 
-Works with any TileServer (e.g., TileServer GL, Maptiler, custom servers)
+5.Works with any TileServer (e.g., TileServer GL, Maptiler, custom servers)
 
-How It Works
+# How It Works
 
 The Qt program runs Docker commands internally:
 
-Start button
+# Start button
 Runs a command similar to:
 
 docker run -d -p 8080:8080 <tileserver-image>
 
 
-Stop button
+# Stop button
 Stops the running container:
 
 docker stop <container-id>
@@ -32,7 +32,7 @@ docker stop <container-id>
 
 Qt executes these using QProcess in the backend.
 
-How to Run
+# How to Run
 
 Install and start Docker .
 
